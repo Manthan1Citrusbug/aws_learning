@@ -1,0 +1,29 @@
+# To install serverless
+npm install -g serverless
+
+# Create a new serverless project
+serverless
+
+# Move into the newly created directory
+cd your-service-name
+
+# Download prebuild template from github (in serverless command you have to specify after in this you give path already)
+serverless --template-url=https://github.com/serverless/examples/tree/v3/...
+
+# Deploy serverless
+serverless deploy
+
+# To call(Invoke) the function
+serverless invoke -f hello
+
+# Invoke and display logs:
+serverless invoke -f hello --log
+
+# show logs
+serverless logs -f hello
+
+# Tail logs
+serverless logs -f hello --tail
+
+# remove service
+serverless remove

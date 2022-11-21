@@ -1,0 +1,18 @@
+org: manthanpatel
+app: hello
+service: first-proj
+
+frameworkVersion: '3'
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  hello:
+    handler: handler.hello
+  inputval:
+    handler: handler.inputval
